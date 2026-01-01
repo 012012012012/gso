@@ -20,7 +20,7 @@
                 /*width: 900px;*/
                 color: #e0e0e0;
                 line-height: 1.6;
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
             body>div>div{
                 /*display: inline-block;*/
@@ -28,19 +28,30 @@
                 padding: 20px;
             }
             #title{
+                display: inline-block;
                 text-align: center;
+                margin: 0px;
+            }
+            #logo{
+                display: inline-block;
+                /*height: 3em;*/
+                margin-top: 0px;
+                margin-right: 10px;
             }
             #author{
                 text-align: right;
             }
             @media(max-width: 768px){
-                body>div{font-size: 1.4em;}
+                body>div{font-size: 2em;}
             }
         </style>
     </head>
     <body>
         <div>
-            <h1 id="title">돌키우기 공성전 가이드북</h1>
+            <div style="display: flex; justify-content: center; margin: 15px;">
+                <img id="logo" src="./media/sapphire.png">
+                <h1 id="title">돌키우기 공성전 가이드북</h1>
+            </div>
             
             <div>
                 <h2>어떻게 이기나요?</h2><hr>
