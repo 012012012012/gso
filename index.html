@@ -16,9 +16,9 @@
                 background-color: #181818;
                 border-radius: 20px;
                 /*margin: 10px;*/
-                /*min-width: 900px;*/
                 max-width: 900px;
                 /*width: 900px;*/
+                width: 100%;
                 color: #e0e0e0;
                 line-height: 1.6;
                 font-size: 1.1em;
@@ -39,20 +39,22 @@
                 margin-top: 0px;
                 margin-right: 10px;
             }
-            #author{
-                text-align: right;
+            .pictures{
+                width: 50%;
+                height: auto;
             }
+
             @media(max-width: 600px){
-                body>div{font-size: 1.5em;}
-                img{width: 600px; height: auto;}
+                body>div{font-size: 1.4em;}
+                .pictures{width: 100%; height: auto;}
             }
         </style>
     </head>
     <body>
         <div>
             <div style="display: flex; justify-content: center; margin: 15px;">
-                <img id="logo" src="./media/sapphire.png">
-                <h1 id="title">돌키우기 공성전 가이드북1</h1>
+                <img id="logo" src="./media/castle.png">
+                <h1 id="title">돌키우기 공성전 가이드북</h1>
             </div>
             
             <div>
@@ -62,7 +64,7 @@
                     클랜 마스터는 약 20초간 크리스탈 위에서 가만히 각인을 해야 합니다.<br>
                     각인 중 움직일 시, 각인이 초기화되니 각인중에는 클랜 마스터를 반드시 보호해야 합니다.
                 </p>
-                <img src="./media/engraving.gif" width="300px" height="auto">
+                <img class="pictures" src="./media/engraving.gif">
             </div>
 
             <div>
@@ -74,7 +76,7 @@
                     재생성 타이머는 버프 지속 시간과 같습니다. 만약 버프를 얻었다면,<br>
                     버프가 끝나갈 때쯤 골렘 위치로 가서 다시 처치하세요.
                 </p>
-                <img src="./media/golembuff.jpg">
+                <img class="pictures" src="./media/golembuff.jpg" >
 
                 <h3>2. 리스폰 트랩</h3>
                 <p>
@@ -82,12 +84,8 @@
                     적이 방해하지 못하게 리스폰 트랩을 해야 해요.
                 </p>
                 <p>적 기지에서 빨간색으로 표시된 위치에 서서 보라색 화살표 방향으로 공격하세요.</p>
-                <table>
-                    <tr>
-                        <td style="padding: 5px;"><img src="./media/trap_top.jpg" width="300px" height="auto"></td>
-                        <td style="padding: 5px;"><img src="./media/trap_bottom.jpg" width="300px" height="auto"></td>
-                    </tr>
-                </table>
+                <img src="./media/trap_top.jpg" style="display: inline-block; width: 45%; height: auto;"></td>
+                <img src="./media/trap_bottom.jpg" style="display: inline-block; width: 45%; height: auto;">
                     
                 <p>충분한 인원이 동시에 이 작업을 하면 적이 기지를 벗어나기 힘들게 돼요.</p>
                 <p>
@@ -124,11 +122,10 @@
                     <li>공성전은 시작 10분 전부터 입장 가능하며, 최대 30분간 진행돼요</li>
                     <li>
                         공성맵 **(A:골렘 , B:포탑 , C:포탑과 억제기 및 각인 크리스탈)**<br><br>
-                        <img src="./media/map.jpg" width="500px" height="auto">
+                        <img class="pictures" src="./media/map.jpg">
                     </li>
                 </ul>
             </div>
             </div>
         </body>
 </html>
-
